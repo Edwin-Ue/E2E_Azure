@@ -166,10 +166,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container": "bronze",
-										"folder": {
-											"value": "@pipeline().parameters.table",
-											"type": "Expression"
-										},
+										"folder": "Users",
 										"file": {
 											"value": "@concat(pipeline().parameters.table,'_',variables('current'))",
 											"type": "Expression"
